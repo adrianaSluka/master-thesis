@@ -1,3 +1,4 @@
+# Project-specific ignores
 backgrounds/
 backgrounds.zip
 hard_negatives_final/
@@ -6,22 +7,66 @@ isaac_project/debug_output_C/
 isaac_project/debug_output/
 figures/
 
+# HCCEPose generated outputs
+HCCEPose/evals.csv
+HCCEPose/losses.csv
+HCCEPose/slerp_script_wip.py
+HCCEPose/upload_full_to_hf.py
+HCCEPose/upload_to_hf.py
 
-.ipynb_checkpoints/
+# Python
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
 
-.directory
-.vscode/
-.DS_Store
+# Virtual environments
+.venv/
+venv/
+env/
+.env
 
+# Model weights & checkpoints
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.bin
+
+# Logs
+*.log
+*.log.*
+log*.file
+
+# Archives
 *.usdz
 *.zip
+*.tar.gz
+*.tar.bz2
+
+# Images
 *.png
 *.jpg
 *.jpeg
 *.webp
-*.pth
-*.pt
-*.ckpt
+
+# HuggingFace cache
+.cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Desktop / editor metadata
+.directory
+.vscode/
+.DS_Store
+Thumbs.db
+
+# App config
+imgui.ini
+.polyscope.ini
